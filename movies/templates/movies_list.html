@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+  <div class="row">
+    {% for movie in movies %}
+    <div class="col-sm-4" style="text-align:center">
+      <p class="red-color">this is test</p>
+      <img src="{{ movie.avatar.url }}" class="main" alt="Movie 1" >
+      <a href={% url "movie_detail" movie.id %}>
+                <h4>{{ movie.title }}</h4>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+
+</div>
+{% endblock body %}

@@ -28,7 +28,12 @@ Temporary Items
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-
+*/migrations/*
+.idea/
+media/
+static/*
+*/static/
+*/static/*
 # C extensions
 *.so
 
@@ -87,4 +92,3 @@ local_settings.py
 
 .env
 db.sqlite3
-.idea/
